@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <input id="display" readonly value="0">
+        <div class="keys">
+            <button onclick="button('+')" class="operation">+</button>
+            <button onclick="button('9')">9</button>
+            <button onclick="button('8')">8</button>
+            <button onclick="button('7')">7</button>
+            <button onclick="button('-')" class="operation">-</button>
+            <button onclick="button('6')">6</button>
+            <button onclick="button('5')">5</button>
+            <button onclick="button('4')">4</button>
+            <button onclick="button('*')" class="operation">*</button>
+            <button onclick="button('3')">3</button>
+            <button onclick="button('2')">2</button>
+            <button onclick="button('1')">1</button>
+            <button onclick="button('/')" class="operation">/</button>
+            <button onclick="button('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculate()">=</button>
+            <!-- Scientific Calculator Buttons -->
+            <button onclick="trignometric_logaramitic('√')" class="operation">√</button>
+            <button onclick="button('**')" class="operation">^</button>
+            <button onclick="trignometric_logaramitic('sin')" class="operation">sin</button>
+            <button onclick="trignometric_logaramitic('cos')" class="operation">cos</button>
+            <button onclick="trignometric_logaramitic('tan')" class="operation">tan</button>
+            <button onclick="trignometric_logaramitic('log')" class="operation">log</button>
+            <button onclick="button('(')"> ( </button>
+            <button onclick="button(')')"> ) </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
